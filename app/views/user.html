@@ -1,0 +1,48 @@
+  <div class="container">
+  	<div class="navbar">
+  		<div class="navbar-inner">
+  			<a class="brand" href="#">Angular Study</a>
+  			<ul class="nav">
+  				<li class="active"><a href="#/users">Users</a></li>
+  			</ul>
+  			<ul class="nav pull-right">
+  				<li class="active"><a href="#">Welcome {{user.name}}</a></li>
+  			</ul>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="span5">
+  			<form ng-submit="create(name, age)" class='well'>
+  				<h3>New User</h3>
+  				<fieldset>
+  					<input ng-model='name' type="text" class="input-xlarge" placeholder="Name..." required>
+  					<input ng-model='age' type="number" class="input-xlarge" placeholder="Age...
+  				  " required>
+  					<br/>
+  					<button type="submit" class="btn">Submit</button>
+  				</fieldset>
+  			</form>
+  		</div>
+  		<div class="row"> 
+  			<div class="span4">
+  				<h3>Users</h3>
+  				<table class="table table-striped">
+  					<thead>
+  						<th>Name</th>
+  						<th>Age</th>
+  						<th>Delete</th>
+  					</thead>
+  					<tbody>
+  						<tr ng-repeat="user in users">
+  							<td>{{user.name}}</td>
+  							<td>{{user.age}}</td>
+  							<td><a href="" title="Delete" ng-click="delete($index)" class="pull-right">Delete</a></td>
+  						</tr>
+  					</tbody>
+  				</table>
+  			</div>
+  		</div>
+  	</div>
+
+
+

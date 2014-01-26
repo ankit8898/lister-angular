@@ -1,0 +1,33 @@
+<div class="container">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<a class="brand" href="#">Angular Study</a>
+			<ul class="nav">
+				<li class="active"><a href="#/users">Users</a></li>
+			</ul>
+			<ul class="nav pull-right">
+				<li class="active"><a href="#">Welcome {{user.name}}</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row"> 
+		<div class="row">
+			<div class="span6">
+				<div class="hero-unit">
+					<h1>'Allo, 'Allo!</h1>
+					<p>You now have</p>
+					<ul>
+						<li ng-repeat="thing in awesomeThings">{{thing}}</li>
+					</ul>
+					<h1>{{data.messa}}</h1>
+					<p>installed.</p>
+					<h3>Enjoy coding! - Yeoman</h3>
+				</div>
+			</div>
+			<div class="span3"></div>
+		</div>
+	</div>
+</div>
+
+
+
